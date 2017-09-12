@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Guess Number </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html {
+            font-family: 'helvetica', helvetica, sans-serif;
+        }
+        body {
+            /*width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;*/
+        }
+        .lastResult {
+            color: #ffffff;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center">Number Guessing Game</h1><hr>
+            <p>We have selected a random number between 1 and 100. See if you can guess in 10 turns or fewer.
+                We will tell you if your guess was too high or too low.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="form">
+                <label for="guessField">Enter a guess: </label>
+                <input type="text" id="guessField" class="form-control guessField">
+                <input type="submit" value="Submit guess" class="guessSubmit">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
